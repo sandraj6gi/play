@@ -3,11 +3,13 @@
     <v-main>
       <v-container>
         <v-card>
-          <v-btn
-              @click="toggleVideo">
+          <v-btn color="white"
+                 x-large
+                 @click="toggleVideo">
             {{this.buttonText}}
           </v-btn>
-          <video-component :isSandra="this.isSandra">
+          <video-component
+              :isSandra="this.isSandra">
           </video-component>
         </v-card>
       </v-container>
@@ -31,7 +33,7 @@ export default {
   data() {
     return {
       isSandra: true,
-      buttonText: "Watch a video of a cat"
+      buttonText: "Watch a video of cats"
     };
   }
 }
@@ -44,16 +46,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
-
 .container {
   width: 83.33vw;
   height: 45vw;
-  margin-top: 5vw;
+  margin-top: -0.5vw;
+  padding: 0 !important;
+}
+.v-btn {
+  margin: 4vw 0 3vw 0;
 }
 .v-card {
   height: 100%;
-  padding-top: 2vw;
+  box-shadow: none !important;
+  background-image: linear-gradient(to top, rgba(231,62,149,0), rgba(255,0,0,0.3));
 }
 </style>
