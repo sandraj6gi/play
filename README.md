@@ -1,4 +1,4 @@
-# Play
+# Site is live here: https://precious-truffle-4250eb.netlify.app
 
 ## Project setup
 ```
