@@ -5,7 +5,7 @@
         <v-card>
           <v-btn
               @click="toggleVideo">
-            Button {{this.buttonText}}
+            {{this.buttonText}}
           </v-btn>
           <video-component :isSandra="this.isSandra">
           </video-component>
