@@ -1,17 +1,23 @@
 <template>
   <v-app id="app">
-    <v-card>
-      <v-card-title>Hello</v-card-title>
-      <v-color-picker></v-color-picker>
-    </v-card>
+    <v-main>
+      <v-container>
+        <v-card>
+          <v-card-title>Hello</v-card-title>
+          <video-component>
+          </video-component>
+        </v-card>
+      </v-container>
+    </v-main>
   </v-app>
 </template>
 
 <script>
-
+import VideoComponent from "@/components/VideoComponent";
 export default {
   name: 'App',
   components: {
+    VideoComponent
 
   }
 }
