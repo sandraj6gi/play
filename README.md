@@ -1,4 +1,4 @@
-# vue-models-tutorial
+# Play
 
 ## Project setup
 ```
