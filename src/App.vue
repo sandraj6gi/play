@@ -1,7 +1,10 @@
 <template>
-  <div id="app">
-
-  </div>
+  <v-app id="app">
+    <v-card>
+      <v-card-title>Hello</v-card-title>
+      <v-color-picker></v-color-picker>
+    </v-card>
+  </v-app>
 </template>
 
 <script>
