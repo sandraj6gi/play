@@ -22,8 +22,8 @@ export default {
   name: "VideoComponent",
   data() {
     return {
-      videoLink: "https://www.youtube.com/embed/tndAVl6iGnk",
-      videoLinkSandra: "https://www.youtube.com/embed/eX2qFMC8cFo"
+      videoLinkSandra: "https://www.youtube.com/embed/tndAVl6iGnk",
+      videoLink: "https://www.youtube.com/embed/eX2qFMC8cFo"
     }
   },
   props: {isSandra: Boolean}

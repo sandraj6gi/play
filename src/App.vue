@@ -4,8 +4,8 @@
       <v-container>
         <v-card>
           <v-btn
-              @click="isSandra = !isSandra">
-            Button
+              @click="toggleVideo">
+            Button {{this.buttonText}}
           </v-btn>
           <video-component :isSandra="this.isSandra">
           </video-component>
@@ -22,9 +22,16 @@ export default {
   components: {
     VideoComponent
   },
+  methods: {
+    toggleVideo() {
+      this.isSandra = !this.isSandra
+      this.buttonText = this.isSandra ? "Watch a video of a cat" : "Watch a video of Sandra"
+    }
+  },
   data() {
     return {
-      isSandra: true
+      isSandra: true,
+      buttonText: "Watch a video of a cat"
     };
   }
 }
