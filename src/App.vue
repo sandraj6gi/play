@@ -27,7 +27,7 @@ export default {
   methods: {
     toggleVideo() {
       this.isSandra = !this.isSandra
-      this.buttonText = this.isSandra ? "Watch a video of a cat" : "Watch a video of Sandra"
+      this.buttonText = this.isSandra ? "Watch a video of cats" : "Watch a video of Sandra"
     }
   },
   data() {
